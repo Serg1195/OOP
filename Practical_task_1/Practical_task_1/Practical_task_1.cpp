@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cmath>
 #include <cassert>
 #include <cstdint>
@@ -105,7 +105,7 @@ public:
         delete[] m_arr;
     }
 };
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 int main()
 {
     //Task 1
