@@ -147,16 +147,59 @@ class Fraction
 	int numerator; int denominator;
 public:
 	Fraction(int num, int den) :numerator(num), denominator(den) {}
-	
+	int getNumerator() const { return numerator; }
+	int getDenominator() const { return denominator; }
+	void print()
+	{
+		if (denominator!=0)
+		{
+		cout << numerator << '/' << denominator << endl;
+		}
+		else
+		{
+			cout << "!!!ERROR!!!";
+		}
+	}
 };
 
+Fraction operator+(const Fraction& f1, const Fraction& f2)
+{
+	return Fraction(f1.getNumerator() * f2.getDenominator() + f2.getNumerator() * f1.getDenominator(), f1.getDenominator() * f2.getDenominator());
+}
+
+Fraction operator*(const Fraction& f1, const Fraction& f2)
+{
+	return Fraction(f1.getNumerator() * f2.getNumerator(), f1.getDenominator() * f2.getDenominator());
+}
+
+Fraction operator-(const Fraction& f1, const Fraction& f2)
+{
+	return Fraction(f1.getNumerator() * f2.getDenominator() - f2.getNumerator() * f1.getDenominator(), f1.getDenominator() * f2.getDenominator());
+}
+
+Fraction operator/(const Fraction& f1, const Fraction& f2)
+{
+	return Fraction(f1.getNumerator() * f2.getDenominator(), f1.getDenominator() * f2.getNumerator());
+}
 
 int main()
 {
-	Minivan m;
+	Fraction f1(3,7);
+	f1.print();
+	Fraction f2(9, 2);
+	f2.print();
+	Fraction f3 = f1 + f2;
+	f3.print();
+	f3 = f1 * f2;
+	f3.print();
+	f3 = f1 / f2;
+	f3.print();
+	f3 = f1 - f2;
+	f3.print();
+	/*Minivan m;
 	Bus b;
 	
-	/*Rectangle* r = new Rectangle(3, 4);
+	Rectangle* r = new Rectangle(3, 4);
 	cout << area(r);
 	Square* s = new Square(3);
 	cout << area(s);
