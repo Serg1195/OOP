@@ -1,2 +1,4 @@
 ﻿  Practical_task_5.cpp
-  Practical_task_5.vcxproj -> C:\Users\Serg\Desktop\OOP\Practical_task_5\Debug\Practical_task_5.exe
+C:\Users\Serg\Desktop\OOP\Practical_task_5\Practical_task_5\Practical_task_5.cpp(47,38): error C3861: m_а: идентификатор не найден
+C:\Users\Serg\Desktop\OOP\Practical_task_5\Practical_task_5\Practical_task_5.cpp(49): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "StringValuePair<T>"
+C:\Users\Serg\Desktop\OOP\Practical_task_5\Practical_task_5\Practical_task_5.cpp(47,48): error C3861: m_b: идентификатор не найден
