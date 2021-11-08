@@ -1,0 +1,5 @@
+﻿  Praktical_task_6.cpp
+C:\Users\Serg\Desktop\OOP\Praktical_task_6\Praktical_task_6\Praktical_task_6.cpp(22,2): error C2065: cin: необъявленный идентификатор
+C:\Users\Serg\Desktop\OOP\Praktical_task_6\Praktical_task_6\Praktical_task_6.cpp(23,2): error C2065: cout: необъявленный идентификатор
+C:\Users\Serg\Desktop\OOP\Praktical_task_6\Praktical_task_6\Praktical_task_6.cpp(23,9): error C2065: boolalpha: необъявленный идентификатор
+C:\Users\Serg\Desktop\OOP\Praktical_task_6\Praktical_task_6\Praktical_task_6.cpp(23,33): error C2065: endll: необъявленный идентификатор
