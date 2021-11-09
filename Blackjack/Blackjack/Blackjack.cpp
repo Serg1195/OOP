@@ -92,7 +92,89 @@ int Hand::GetTotal() const
     return total;
 }
 
+class Deck:public Hand {
+public:
+    Deck() {
+
+    }
+    void Populate();
+    void Shuffle();
+    void Deal(Hand& aHand);
+    void AddltionalCards(GenericPlayer& aGenerlcPlayer);
+private:
+};
+
+class GenericPlayer :public Hand {
+public:
+    GenericPlayer() {
+
+    }
+    virtual bool IsHitting() const;
+    bool IsBoosted() const;
+    void Bust() const;
+private:
+    string m_Name;
+};
+
+class Player :public GenericPlayer {
+public:
+    Player() {
+
+    }
+    virtual bool IsHitting() const;
+    void Win() const;
+    void Lose() const;
+    void Push() const;
+private:
+};
+
+class House :public GenericPlayer {
+public:
+    House() {
+
+    }
+    virtual bool IsHitting() const;
+    void FlipFirstCard();
+private:
+};
+
+class Game {
+public:
+    Game() {
+
+    }
+    void Play();
+private:
+    Deck m_Deck;
+    House m_House;
+    vector<Player> m_Players;
+};
+
 int main()
 {
-    std::cout << "Blackjack\n";
+    cout << "\t\tWelcome to Blackjack!\n\n";
+    int numPlayers = 0;
+    while (numPlayers < 1 || numPlayers > 7)
+    {
+        cout << "How many players? (1 - 7): ";
+        cin >> numPlayers;
+    }
+    vector<string> names;
+    string name;
+    for (int i = 0; i < numPlayers; ++i)
+    {
+        cout << "Enter player name: ";
+        cin >> name;
+        names.push_back(name);
+    }
+    cout << endl;
+
+    Game aGame();
+    char again = 'y';
+    while (again != 'n' && again != 'N')
+    {
+        aGame.Play();
+        cout << "\nDo you want to play again? (Y/N): ";
+        cin >> again;
+    }
 }
