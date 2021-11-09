@@ -1,0 +1,3 @@
+C:/Users/Serg/Desktop/OOP/Praktical_task_6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Serg/Desktop/OOP/Praktical_task_6/cmake-build-debug/CMakeFiles/Praktical_task_6.dir
+C:/Users/Serg/Desktop/OOP/Praktical_task_6/cmake-build-debug/CMakeFiles/edit_cache.dir
