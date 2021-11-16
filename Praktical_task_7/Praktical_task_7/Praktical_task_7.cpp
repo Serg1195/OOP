@@ -9,7 +9,7 @@ public:
     int getY() const { return year; }
     void setD(int d) { day=d; }
     void setM(int m) {month=m; }
-    void setY(int y) {year=y; }
+    void setY(int y) {year=y; }//dddoOO
     ostream& operator<< (ostream& out , const Date& date)
     {
         out << "Date: " << date.m_day << ". " << date.m_month << ". " << date.m_year << "\n";
