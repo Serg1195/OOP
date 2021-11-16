@@ -11,7 +11,7 @@ public:
     void setD(int d) { day=d; }
     void setM(int m) {month=m; }
 <<<<<<< HEAD
-    void setY(int y) {year=y; }//dddoOO
+    void setY(int y) {year=y; }
     ostream& operator<< (ostream& out , const Date& date)
     {
         out << "Date: " << date.m_day << ". " << date.m_month << ". " << date.m_year << "\n";
