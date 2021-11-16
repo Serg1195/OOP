@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <time.h>
 using namespace std;
 class Date {
     int day, month, year;
